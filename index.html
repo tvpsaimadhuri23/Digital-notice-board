@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+   <title> Notice Board </title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 500px; 
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body{
+    background-color:rgb(24,3,86);
+}
+h1.heading{
+    font-size:20px;
+    font-style:helvetica;
+    color:white;
+    border: 7px solid silver;
+    margin-left:320px;
+    margin-right:320px;
+    margin-top:0px;
+    padding:5px 150px 5px 150px;
+    box-shadow: 10px 10px 5px rgb(124, 74, 74);
+}
+.chairman{
+    text-align:left;
+    border:2px solid white;
+    font-size:10px;
+    color: white;
+    
+}
+i.testimonial{
+    border-width:3px; 
+    border-style:solid;
+    border-color: white;
+    font-size:20px;
+    color:white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+i.current{
+    border-width:3px ;
+    border-style:solid;
+    border-color: white;
+    font-size:20px;
+    color:white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+i.message{
+    border-width:3px ;
+    border-style:solid;
+    border-color: white;
+    font-size:20px;
+    color:white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+textarea.d{
+    color:blue;
+    border: 2px solid black;
+    font-style:helvetica;
+    font-size:14px;
+}
+img.image {
+    border: 3px solid black;
+    margin-left:30%;
+}
+.audio{
+    margin-right:10px;
+}
+.mic{
+    margin-right:0px;
+}
+</style>
+</head>
+<body>
+  <h1 class="heading"> <img  src="images/logo.png" width="30px" height="30px"> &nbsp  VIGNAN'S DIGITAL NOTICE BOARD &nbsp <img  src="images/logo.png" width="30px" height="30px">  </h1>
+    <!-- <p class="time"> <button type="button" onclick="document.getElementById('display').innerHTML = Date()"> Date and Time </button> </p> -->
+  <h2>  <img class="chairman" src="images/chairman.jpg" width="75" height="75"> Dr. Lavu Rathaiah &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <embed class="audio" src="audio.mp3" autostart="true" loop="false" width="30" height="30" <a href="#" onmousedown="audio.mp3"> <img class="mic" src="images/mic.jpg" width="20" height="20"></a> 
+                                                                                 <!--<a href="#" onmousedown="audio.mp3"><img style="margin-right=0" src="images/mic.jpg" width="20" height="20"></a> -->  </h2>
+ 
+<div class="row">
+  <div class="column" style="background-color:rgb(24,3,86);">
+    <h2><i class="testimonial">TESTIMONIAL</i></h2>
+     <p class="a"> <marquee behaviour="scroll" direction="right" scrolldelay=150 scrollduration=40s> <img class="image" src="images/1.jpg"width="400" height="400"> 
+                                                                                               <img class="image" src="images/2.jpg"width="400" height="400">
+                                                                                               <img class="image" src="images/3.jpg"width="400" height="400"> 
+                                                                                               <img class="image" src="images/4.jpg"width="400" height="400">
+                                                                                               <img class="image" src="images/5.jpg"width="400" height="400"> </marquee> </p>
+  </div>
+  <div class="column" style="background-color:rgb(24,3,86);">
+    <h2><i class="current">CAREEREDGE</i></h2>
+    <p class="b"> <marquee behaviour="scroll" direction="right" scrolldelay=150 scrollduration=40s> <img class="image" src="images/c1.jpg"width="400" height="400"> 
+                                                                                               <img class="image" src="images/c2.jpg"width="400" height="400">
+                                                                                               <img class="image" src="images/c3.jpg"width="400" height="400"> 
+                                                                                               <img class="image" src="images/c4.jpg"width="400" height="400"> </marquee> </p>
+  </div>
+  <div class="column" style="background-color:rgb(24,3,86);">
+    <h2><i class="message">ANNOUNCEMENTS</i></h2>
+    <p class="c"> <!--<marquee behaviour="scroll" direction="up" scrolldelay=200> --> <form action="" method="" >
+                                                                                              <textarea class="d" rows="25" cols="58" >   </textarea>
+                                                                                              <button class="submit" style="float:right;margin-right:50px" >Clear</button> </marquee></p>
+  </div>
+</div>
+<h3></h3>
+<p style="color:white;font-size:8px;border-width:thin;border-style:solid;border-colorsilver;margin-bottom:0"> <marquee behaviour="scroll" direction="left" scrolldelay=300><i>VIGNAN'S INSTITUTE OF INFORMATION TECHNOLOGY(AUTONOMOUS) Re-accredited by NAAC with 'A' Grade(CGPA of 3.41/4.00) DUVVADA,VISAKHAPATNAM</i> </marquee></p>
+   
+
+</body>
+
+</html>
+
+
+
+</body>
+
+</html>
